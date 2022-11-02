@@ -1,0 +1,144 @@
+
+body {
+  background-image: url("images/wave.svg");
+  color: #6B6261;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  background-size: 120%;
+  background-repeat: no-repeat;
+  background-position: 0px bottom;
+  animation: slideWave 5s linear infinite alternate-reverse;
+}
+
+
+h1, h2 {
+  color:#274156 ;
+  font-family: 'Monoton', cursive;
+}
+
+i {
+  font-size: 24px;
+  color: black;
+}
+
+.top {
+  padding: 48px;
+}
+.container {
+  box-shadow: rgba(44, 135, 226, 0.19) 0px 8px 24px;
+  padding: 32px;
+  border-radius: 25px;
+  width: 500px;
+  margin: 50 auto;
+}
+
+.list-inline {
+  padding: 0;
+  list-style: none;
+}
+
+.list-inline li {
+  display: inline-block;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 70px;
+  background-image: url('images/photo.jpg');
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+  transition: 2s;
+}
+
+.avatar:hover{
+  background-image: url('images/photosmile.jpg');
+  width: 300px;
+  height: 300px;
+  border-radius: 70px;
+}
+
+
+
+.button-51 {
+  background-color: transparent;
+  border: 1px solid #266DB6;
+  box-sizing: border-box;
+  color: #00132C;
+  font-family: "Avenir Next LT W01 Bold",sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 16px 23px;
+  position: relative;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-51:hover,
+.button-51:active {
+  outline: 0;
+}
+
+.button-51:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.button-51:before {
+  background-color: #D5EDF6;
+  content: "";
+  height: calc(100% + 3px);
+  position: absolute;
+  right: -7px;
+  top: -9px;
+  transition: background-color 300ms ease-in;
+  width: 100%;
+  z-index: -1;
+}
+
+.button-51:hover:before {
+  background-color: #409cf2;
+}
+
+.typewriter h1 {
+  overflow: hidden;
+  border-right: .15em solid rgb(81, 93, 226);
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  animation:
+    typing 7s steps(40, end),
+    blink-caret .75s
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 50% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(81, 93, 226); }
+}
+
+@media (min-width: 768px) {
+  .button-51 {
+    padding: 16px 32px;
+  }
+}
+
+@keyframes slideWave {
+  0% {
+    background-position:0px bottom;
+  }
+
+  100% {
+    background-position:-100px bottom;
+  }
+}
